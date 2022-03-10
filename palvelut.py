@@ -46,6 +46,3 @@ class ParempiPalvelu(Palvelu):
 
     def tulosta_edut():
         pass
-
-
-    edut() = 
