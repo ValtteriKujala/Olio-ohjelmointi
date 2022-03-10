@@ -11,3 +11,16 @@ class Palvelu(Asiakas):
     def __int__(self):
         self.tuotenimi = tuotenimi
         self.__asiakkaat = []
+
+    def _luo_asiakasrivi(Asiakas):
+        pass
+    
+    def lisaa_asiakasrivi(Asiakas):
+        pass
+
+    def poista_asiakas(Asiakas):
+        pass
+
+    def tulosta_asiakkaat():
+        pass
+    
