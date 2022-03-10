@@ -28,7 +28,7 @@ class Asiakas:
     
     def set_nimi(self, nimi2):
         nimi2 = nimi2
-        if nimi2 != "":
+        if nimi2 == "":
             raise ValueError("Uusi nimi kannattaa antaa UwU")
         else:
             self.__nimi = nimi2
@@ -54,8 +54,12 @@ class Palvelu(Asiakas):
     def _luo_asiakasrivi(Asiakas):
         pass
 
-    def lisaa_asiakas(Asiakas):
-        pass
+    def lisaa_asiakas(self, nimi, ika):
+        if nimi or ika == "":
+            raise ValueError("Uusi asiakas uwu meow woof woof")
+        else:
+            self.__asiakkaat.append(Asiakas(nimi, ika))
+
 
     def poista_asiakas(Asiakas):
         pass
