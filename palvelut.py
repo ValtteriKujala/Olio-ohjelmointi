@@ -61,11 +61,17 @@ class Palvelu(Asiakas):
             self.__asiakkaat.append(Asiakas(nimi, ika))
 
 
-    def poista_asiakas(Asiakas):
-        pass
+    def poista_asiakas(self, nimi):
+        if nimi in self.__asiakkaat:
+            self.__asiakkaat.remove(nimi)
+        else:
+            pass
 
-    def tulosta_asiakkaat():
-        pass
+    def tulosta_asiakkaat(self):
+        for x in len(self.__asiakkaat) // 3:
+            print(f'{asiakas.get_nimi()} on asiakkaamme.')
+        
+        
     
 
 
