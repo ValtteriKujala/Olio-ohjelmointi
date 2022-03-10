@@ -4,11 +4,17 @@ class Asiakas:
         self.__asiakasnro = []
         self.__ika = ika
 
+    def get_nimi():
+        pass
+
+    def get_ika():
+        pass
+
     def __luo_nro():
         pass
  
 class Palvelu(Asiakas):
-    def __int__(self):
+    def __int__(self, tuotenimi=[]):
         self.tuotenimi = tuotenimi
         self.__asiakkaat = []
 
@@ -27,9 +33,10 @@ class Palvelu(Asiakas):
 
 
 
-class ParempiPalvelu:
+class ParempiPalvelu(Palvelu):
     def __init__(self):
         self.__edut = []
+        self.tuotenimi = super().__init__(tuotenimi)
 
     def lisaa_etu(__edut):
         pass
@@ -39,3 +46,6 @@ class ParempiPalvelu:
 
     def tulosta_edut():
         pass
+
+
+    edut() = 
