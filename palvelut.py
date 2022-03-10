@@ -54,7 +54,7 @@ class Palvelu(Asiakas):
     def _luo_asiakasrivi(Asiakas):
         pass
 
-    def lisaa_asiakasrivi(Asiakas):
+    def lisaa_asiakas(Asiakas):
         pass
 
     def poista_asiakas(Asiakas):
