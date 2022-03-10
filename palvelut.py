@@ -6,3 +6,8 @@ class Asiakas:
 
     def __luo_nro():
         pass
+
+class Palvelu(Asiakas):
+    def __int__(self):
+        self.tuotenimi = tuotenimi
+        self.__asiakkaat = []
