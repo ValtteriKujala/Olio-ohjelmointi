@@ -24,3 +24,16 @@ class Palvelu(Asiakas):
     def tulosta_asiakkaat():
         pass
     
+
+class ParempiPalvelu:
+    def __init__(self):
+        self.__edut = []
+
+    def lisaa_etu(__edut):
+        pass
+
+    def poista_etu(__edut):
+        pass
+
+    def tulosta_edut():
+        pass
