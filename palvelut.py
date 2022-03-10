@@ -1,12 +1,12 @@
 class Asiakas:
-    def __int__(self):
+    def __int__(self, nimi, ika):
         self.__nimi = nimi
         self.__asiakasnro = []
         self.__ika = ika
 
     def __luo_nro():
         pass
-
+ 
 class Palvelu(Asiakas):
     def __int__(self):
         self.tuotenimi = tuotenimi
@@ -14,7 +14,7 @@ class Palvelu(Asiakas):
 
     def _luo_asiakasrivi(Asiakas):
         pass
-    
+
     def lisaa_asiakasrivi(Asiakas):
         pass
 
@@ -24,6 +24,8 @@ class Palvelu(Asiakas):
     def tulosta_asiakkaat():
         pass
     
+
+
 
 class ParempiPalvelu:
     def __init__(self):
