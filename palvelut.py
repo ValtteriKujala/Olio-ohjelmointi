@@ -1,9 +1,9 @@
 import random
 
 class Asiakas:
-    def __int__(self, nimi, ika):
+    def __init__(self, nimi, ika):
         self.__nimi = nimi
-        self.__asiakasnro = luo_nro()
+        self.__asiakasnro = self.__luo_nro()
         self.__ika = ika
 
     def __luo_nro(self):
@@ -27,14 +27,12 @@ class Asiakas:
         return self.__ika
     
     def set_nimi(self, nimi2):
-        nimi2 = nimi2
         if nimi2 == "":
             raise ValueError("Uusi nimi kannattaa antaa UwU")
         else:
             self.__nimi = nimi2
 
     def set_ika(self, ika2):
-        ika2 = ika2
         if ika2 != "":
             raise ValueError("Uusi ika kannattaa antaa UwU")
         else:
@@ -42,23 +40,20 @@ class Asiakas:
 
     def get_ika(self):
         return self.__ika
-
-    def __luo_nro():
-        pass
  
-class Palvelu(Asiakas):
-    def __int__(self, tuotenimi=[]):
+class Palvelu:
+    def __init__(self, tuotenimi=[]):
         self.tuotenimi = tuotenimi
         self.__asiakkaat = []
 
     def _luo_asiakasrivi(Asiakas):
-        pass
+        return "f'{asiakas.get_nimi()} on asiakkaamme."
 
-    def lisaa_asiakas(self, nimi, ika):
-        if nimi or ika == "":
-            raise ValueError("Uusi asiakas uwu meow woof woof")
+    def lisaa_asiakas(self, Asiakas):
+        if Asiakas.get_nimi() == "" or Asiakas.get_ika() == "":
+            raise ValueError("Uusi asiakas")
         else:
-            self.__asiakkaat.append(Asiakas(nimi, ika))
+            self.__asiakkaat.append(Asiakas)
 
 
     def poista_asiakas(self, nimi):
@@ -69,9 +64,7 @@ class Palvelu(Asiakas):
 
     def tulosta_asiakkaat(self):
         for x in len(self.__asiakkaat) // 3:
-            print(f'{asiakas.get_nimi()} on asiakkaamme.')
-        
-        
+            print("f'{asiakas.get_nimi()} on asiakkaamme.")
     
 
 
@@ -81,11 +74,19 @@ class ParempiPalvelu(Palvelu):
         self.__edut = []
         self.tuotenimi = super().__init__(tuotenimi)
 
-    def lisaa_etu(__edut):
-        pass
+    def lisaa_etu(self, etu):
+        if etu == "":
+            raise ValueError("Uusi asiakas")
+        else:
+            self.__asiakkaat.append(__edut(etu))
 
-    def poista_etu(__edut):
-        pass
+    def poista_etu(self, etu):
+        if etu in self.__asiakkaat:
+            self.__edut.remove(etu)
+        else:
+            pass
 
-    def tulosta_edut():
-        pass
+    def tulosta_edut(self, etu):
+        for x in len(self.__asiakkaat) // 3:    
+            print(f'{__edut.get_nimi()} on asiakkaamme.')
+        
