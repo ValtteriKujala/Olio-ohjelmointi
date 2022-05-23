@@ -63,16 +63,17 @@ class Palvelu:
             pass
 
     def tulosta_asiakkaat(self):
-        for x in len(self.__asiakkaat) // 3:
+        for x in self.__asiakkaat:
             print("f'{asiakas.get_nimi()} on asiakkaamme.")
     
 
 
 
 class ParempiPalvelu(Palvelu):
-    def __init__(self):
-        self.__edut = []
-        self.tuotenimi = super().__init__(tuotenimi)
+    def __init__(self, tuotenimi, edut = []):
+        super().__init__(tuotenimi)
+        self.__edut = edut
+        
 
     def lisaa_etu(self, etu):
         if etu == "":
@@ -89,4 +90,3 @@ class ParempiPalvelu(Palvelu):
     def tulosta_edut(self, etu):
         for x in len(self.__asiakkaat) // 3:    
             print(f'{__edut.get_nimi()} on asiakkaamme.')
-        
